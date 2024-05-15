@@ -1,0 +1,49 @@
+{
+	"name": "Existing Dockerfile",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"extensions.verifySignature": false,
+				"editor.rulers": [
+					120
+				],
+				"telemetry.telemetryLevel": "off",
+				"mypy-type-checker.preferDaemon": true,
+				"mypy-type-checker.interpreter": [
+					"/usr/local/bin/python"
+				],
+				"mypy-type-checker.args": ["--config-file=${workspaceFolder}/pyproject.toml"],
+				"isort.interpreter": [
+					"/usr/local/bin/python"
+				],
+				"editor.semanticHighlighting.enabled": true,
+				"python.languageServer": "Pylance",
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.diagnostics.sourceMapsEnabled": true,
+				"mypy-type-checker.importStrategy": "fromEnvironment",
+				"mypy-type-checker.reportingScope": "workspace"
+			},
+			"extensions": [
+				"ms-python.isort",
+				"ms-python.mypy-type-checker",
+				"ms-python.vscode-pylance",
+				"ms-python.python"				
+			]
+		}
+	},
+
+	"mounts": [
+		"source=.,target=/app,type=bind,consistency=cached"
+	]
+}
