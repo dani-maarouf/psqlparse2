@@ -12,7 +12,10 @@ help:
 	@echo ""
 
 gen_proto:
-	python -m grpc_tools.protoc -I./libpg_query/protobuf --python_out=pyi_out:./src/psqlparse2/pb libpg_query/protobuf/*.proto
+	python -m grpc_tools.protoc \
+		-I./libpg_query/protobuf \
+		--python_out=pyi_out:./src/psqlparse2/pb \
+		libpg_query/protobuf/*.proto
 
 reinstall:
 	python -m pip install --upgrade --force-reinstall -v '.[dev]'
