@@ -1,15 +1,16 @@
 [build-system]
 requires = [
-    "setuptools>=60",
+    "setuptools>=61",
     "wheel",
-    "Cython(>=Cython==3.0.10,<3.1)"
+    "Cython(>=Cython==3.0.10,<3.1)",
+    "setuptools_scm>=8",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "psqlparse2"
 description = "libpg_query wrapper for Python"
-version = "0.0.1"
+dynamic = ["version"]
 readme = "README.md"
 authors = [
     {name = "Dani Maarouf", email = "dmaarouf@cisco.com"}
@@ -88,6 +89,9 @@ disallow_any_generics = false
 [tool.setuptools]
 zip-safe = false
 include-package-data = true
+
+[tool.setuptools_scm]
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
