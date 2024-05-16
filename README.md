@@ -7,5 +7,5 @@ Inspired by [psqlparse](https://github.com/alculquicondor/psqlparse), which was 
 ## Installation
 
 ```bash
-pip install 'psqlparse2 @ git+https://github.com/dani-maarouf/psqlparse2.git@v0.0.1'
+pip install 'psqlparse2 @ git+https://github.com/dani-maarouf/psqlparse2.git@v0.0.2'
 ```
