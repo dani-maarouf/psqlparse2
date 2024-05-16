@@ -32,9 +32,8 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "protobuf>=5.26, <5.27",
-    "types-protobuf>=5.26, <5.27",
-    "Cython>=3.0.10, <3.1",
+    "protobuf>=4.21.6, <5.0",
+    "types-protobuf>=4.21.6, <5.0",
 ]
 
 [project.urls]
@@ -47,7 +46,7 @@ dev = [
     "mypy>=1.10.0",
     "pytest>=8.2, <9",
     "pytest-cov>=5.0.0, <6",
-    "grpcio-tools>=1.63.0, <1.70",
+    "grpcio-tools>=1.60.0, <1.70",
 ]
 
 [tool.black]
