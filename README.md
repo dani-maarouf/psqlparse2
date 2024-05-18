@@ -1,3 +1,5 @@
+[![PyPI deploy](https://github.com/dani-maarouf/psqlparse2/actions/workflows/workflow.yml/badge.svg)](https://github.com/dani-maarouf/psqlparse2/actions/workflows/workflow.yml)
+
 # psqlparse2
 
 Python wrapper for [libpg_query](https://github.com/pganalyze/libpg_query).
@@ -20,5 +22,5 @@ and then manipulate the parse tree before converting it back into a SQL string.
 ## Installation
 
 ```bash
-pip install 'psqlparse2 @ git+https://github.com/dani-maarouf/psqlparse2.git@v0.0.3'
+pip install psqlparse2
 ```

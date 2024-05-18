@@ -88,7 +88,6 @@ disallow_any_generics = false
 
 [tool.setuptools]
 zip-safe = false
-include-package-data = true
 
 [tool.setuptools_scm]
 
